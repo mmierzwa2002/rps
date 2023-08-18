@@ -26,8 +26,8 @@ function game() {
 function playRound(playerSelection, computerSelection) {
 
     let lowerPlayerSelection = playerSelection.toLowerCase(); //make case insensitivity for user
-    let lowerComputerSelection = computerSelection.toLowerCase(); //make user choice with first letter capitalized. looks better when announcing winner
-    let capPlayerSelection = lowerPlayerSelection.charAt(0).toUpperCase() + lowerPlayerSelection.slice(1);
+    let lowerComputerSelection = computerSelection.toLowerCase(); 
+    let capPlayerSelection = lowerPlayerSelection.charAt(0).toUpperCase() + lowerPlayerSelection.slice(1); //make user choice with first letter capitalized. looks better when announcing winner
 
     if ((lowerPlayerSelection === "rock" && computerSelection === "Scissors") || //win cases
         (lowerPlayerSelection === "paper" && computerSelection === "Rock")    ||
